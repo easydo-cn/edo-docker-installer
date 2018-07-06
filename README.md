@@ -10,5 +10,5 @@
 
 ## 安装指令
 
-  wget https://github.com/easydo-cn/edo-docker-installer/raw/master/install.sh && chmod u+x install.sh && ./install.sh
+    wget https://github.com/easydo-cn/edo-docker-installer/raw/master/install.sh && chmod u+x install.sh && ./install.sh
   
