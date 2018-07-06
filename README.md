@@ -1,28 +1,14 @@
-# edoDMS
+# EDO系统Docker一键安装
 
-## 项目介绍
-易度(文档\文控\档案)管理系统，安装使用和运维项目。
+在裸机环境下，一键安装Docker基础环境，设置防火墙，安装EDO并启动服务
 
-## 功能说明
- 
 ## 环境要求
 
 1. 支持Linux(debian8+\centos7+\ubantu16+)
 2. 不支持32位系统
+3. 服务器能够连接互联网
 
+## 安装指令
 
-## 安装教程
- wget https://github.com/xyzbeta/edoDMS/archive/master.zip && unzip master.zip && cd edoDMS-master && chmod u+x *.sh && ./edoDMS_install.sh
-
-## 相关命令
-
-## 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-## 常见问题及注意事项
-
-
-
+  wget https://github.com/easydo-cn/edo-docker-installer/raw/master/install.sh && chmod u+x install.sh && ./install.sh
+  
