@@ -122,7 +122,7 @@ function installDocker(){
 		debhave=$(find / -name "docker*${docker_version}*.deb")
 			if [ -z "${debhave}" ];then
 				echo -e "${Info}下载${docker_version}并进行安装"
-				wget --no-check-certificate https://download.docker.com/linux/debian/dists/jessie/pool/stable/amd64/docker-ce_${docker_version}~ce-0~debian_amd64.deb
+				wget --no-check-certificate https://mirrors.aliyun.com/docker-ce/linux/debian/dists/jessie/pool/stable/amd64/docker-ce_${docker_version}~ce-0~debian_amd64.deb
 				dpkg -i $(find / -name "docker*${docker_version}*.deb")
 			else
 				echo -e "${Info}"${docker_version}"版本已经存在，无需下载。现在开始安装"
@@ -136,7 +136,7 @@ function installDocker(){
 		debhave=$(find / -name "docker*${docker_version}*.rpm")
 			if [ -z "${debhave}" ];then
 				echo -e "${Info}下载${docker_version}版本并进行安装"
-				wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-${docker_version}.ce-1.el7.centos.x86_64.rpm
+				wget https://mirrors.aliyun.com/docker-ce/linux/centos/7/x86_64/stable/Packages/docker-ce-${docker_version}.ce-1.el7.centos.x86_64.rpm
 				rpm -ivh $(find / -name "docker*${docker_version}*.rpm")
 			else
 				echo -e "${Info}${docker_version}版本已经存在，无需下载。现在开始安装"
